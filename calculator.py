@@ -18,11 +18,14 @@ def multiply(a, b):
 
 # TODO: Implement this function
 def divide(a, b):
-    pass
+    if b ==0:
+        return "zero div error"
+    else:
+        return a/b
 
 # TODO: Implement this function
 def power(a, b):
-    pass
+    return a**b
 
 while True:
     print("\n---- CALCULATOR MENU ----")
@@ -44,8 +47,8 @@ while True:
         continue
 
     try:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        num1 = float(input("Enter  number: "))
+        num2 = float(input("Enter  number: "))
     except ValueError:
         print("Invalid input! Please enter numeric values.")
         continue
